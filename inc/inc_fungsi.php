@@ -113,7 +113,7 @@ function buat_link_article($id)
     $q1     = mysqli_query($koneksi, $sql1);
     $r1     = mysqli_fetch_array($q1);
     $nama  = bersihkan_judul($r1['judul']);
-    // http://localhost/website-company-profile/article.php/8/judul
+   
     return url_dasar() . "/article.php/$id/$nama";
 }
 
@@ -132,16 +132,6 @@ function partners_foto($id)
     }
 }
 
-function buat_link_partners($id)
-{
-    global $koneksi;
-    $sql1    = "select * from partners where id = '$id'";
-    $q1     = mysqli_query($koneksi, $sql1);
-    $r1     = mysqli_fetch_array($q1);
-    $nama  = bersihkan_judul($r1['nama']);
- //http://localhost/historiaberita/halaman.php/8/judul
-    return url_dasar() . "/partners.php/$id/$nama";
-}
 
 
 use PHPMailer\PHPMailer\PHPMailer;
