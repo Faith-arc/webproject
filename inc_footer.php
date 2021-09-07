@@ -21,7 +21,7 @@
 
   <div id="copyright">
       <div class="wrapper">
-          &copy; 2020. <b>RumahRafif.</b> All Rights Reserved.
+          &copy; 2021. <b>Historiaberita.</b> All Rights Reserved.
       </div>
   </div>
 
